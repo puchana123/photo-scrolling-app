@@ -10,7 +10,7 @@ function App() {
 
   const fetchPhoto = async()=>{
       
-    const api_key = `_w_rWVaMtUepbhoibx1ASbDi6oq8MhJRNWm0iIdSLOM`
+    const api_key = process.env.REACT_APP_API_KEY
     setIsLoading(true)
     try {
       const apiUrl = `https://api.unsplash.com/photos/?client_id=${api_key}&page=${pages}`
